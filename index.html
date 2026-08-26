@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SWIMMER — საცურაო აღჭურვილობის თანამედროვე კატალოგი">
+  <title>Swim Space — საცურაო კატალოგი</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a href="#" class="logo" aria-label="SWIMMER მთავარი გვერდი">
+        <span class="logo-mark">〰</span>
+        <span>Swim Space</span>
+      </a>
+
+      <button class="menu-toggle" aria-label="მენიუს გახსნა">☰</button>
+
+      <nav class="nav-links">
+        <a href="#home">მთავარი</a>
+        <a class="active" href="#catalog">კატალოგი</a>
+        <a href="#about-us">ჩვენ შესახებ</a>
+        <!--<a href="#social"></a>-->
+        <a href="#contact">კონტაქტი</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Dark mode-ის ჩართვა" title="Dark mode">
+          <span class="theme-icon">☾</span>
+          <span class="theme-label">Dark</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">Swim Space COLLECTION</p>
+        <h1>ცურვა არის<br>ცხოვრების სტილი</h1>
+        <p>ყველაფერი შენი საცურაო გამოცდილებისთვის — ხარისხიანი აღჭურვილობა ერთ სივრცეში.</p>
+        <a href="#catalog" class="primary-btn">იხილე კოლექცია</a>
+        <div class="slider-dots" aria-label="სლაიდერის ინდიკატორი">
+          <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div class="container benefits-grid">
+        <article><span class="benefit-icon">▣</span><div><b>უფასო მიწოდება</b><small>100₾-ზე მეტი შეკვეთისთვის</small></div></article>
+        <article><span class="benefit-icon">◇</span><div><b>ორიგინალი პროდუქცია</b><small>სანდო ბრენდები და ხარისხი</small></div></article>
+        <article><span class="benefit-icon">↩</span><div><b>უკან დაბრუნება</b><small>24 საათის განმავლობაში</small></div></article>
+        <article><span class="benefit-icon">♧</span><div><b>მხარდაჭერა 24/7</b><small>ჩვენ ყოველთვის აქ ვართ</small></div></article>
+      </div>
+    </section>
+
+    <section id="catalog" class="catalog container">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow blue">ჩვენი არჩევანი</p>
+          <h2>პროდუქტები</h2>
+        </div>
+        <p class="catalog-note">შეარჩიე შენი სტილისა და მიზნის მიხედვით</p>
+      </div>
+
+      <div class="toolbar">
+        <div class="filters">
+          <button class="filter active" data-filter="all">ყველა</button>
+          <button class="filter" data-filter="goggles">ცურვის სათვალე</button>
+          <button class="filter" data-filter="caps">ცურვის ქუდები</button>
+          <button class="filter" data-filter="swimsuits">კოსტიუმები</button>
+          <button class="filter" data-filter="accessories">აქსესუარები</button>
+        </div>
+        <label class="sort">დალაგება:
+          <select id="sortSelect">
+            <option value="default">ყველა პროდუქტი</option>
+            <option value="low">ფასით: დაბლიდან</option>
+            <option value="high">ფასით: მაღლიდან</option>
+            <option value="name">სახელით</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="products" id="productGrid"></div>
+      <p id="emptyState" class="empty hidden">ამ კატეგორიაში პროდუქტი ვერ მოიძებნა.</p>
+    </section>
+
+    <section id="about-us" class="about-us">
+      <div class="container about-us-grid">
+        <div class="about-us-image">
+          <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=1000&q=85" alt="მოცურავე აუზში" loading="lazy">
+        </div>
+        <div class="about-us-content">
+          <p class="eyebrow blue">ჩვენ შესახებ</p>
+          <h2>Swim Space — ცურვის სამყაროსთან უფრო ახლოს</h2>
+          <p>Swim Space არის თანამედროვე საცურაო კატალოგი, რომელიც შეიქმნა მათთვის, ვისაც უყვარს წყალი, აქტიური ცხოვრების წესი და ხარისხიანი აღჭურვილობა. ჩვენი მიზანია ერთ სივრცეში წარმოვადგინოთ პრაქტიკული, კომფორტული და თანამედროვე პროდუქტები ყველა დონის მოცურავისთვის.</p>
+          <p>ჩვენ ვარჩევთ საინტერესო პროდუქტებს ყოველდღიური ვარჯიშისა და პროფესიონალური მომზადებისთვის და ვცდილობთ, მომხმარებელს არჩევანი მაქსიმალურად მარტივად და გასაგებად მივაწოდოთ.</p>
+          <div class="about-us-points">
+            <div><strong>01</strong><span>ხარისხზე ორიენტირებული არჩევანი</span></div>
+            <div><strong>02</strong><span>თანამედროვე და პრაქტიკული პროდუქცია</span></div>
+            <div><strong>03</strong><span>ცურვის მოყვარულებზე მორგებული გამოცდილება</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="social" class="social-section">
+      <div class="container">
+        <div class="social-heading">
+          <p class="eyebrow blue">დაგვიკავშირდი</p>
+          <h2>მოგვყევი სოციალურ ქსელებში</h2>
+          <p>თვალყური ადევნე ჩვენს სიახლეებს, ახალ პროდუქტებსა და საცურაო რჩევებს.</p>
+        </div>
+        <div class="social-grid">
+          <a class="social-card facebook" href="https://facebook.com/YOUR_USERNAME" target="_blank" rel="noopener noreferrer">
+            <span class="social-symbol">f</span>
+            <span><strong>Facebook</strong><small>გვეწვიე Facebook-ზე</small></span>
+            <span class="social-arrow">↗</span>
+          </a>
+          <a class="social-card instagram" href="https://instagram.com/YOUR_USERNAME" target="_blank" rel="noopener noreferrer">
+            <span class="social-symbol">◎</span>
+            <span><strong>Instagram</strong><small>გამოგვყევი Instagram-ზე</small></span>
+            <span class="social-arrow">↗</span>
+          </a>
+          <a class="social-card tiktok" href="https://tiktok.com/@YOUR_USERNAME" target="_blank" rel="noopener noreferrer">
+            <span class="social-symbol">♪</span>
+            <span><strong>TikTok</strong><small>გვიპოვე TikTok-ზე</small></span>
+            <span class="social-arrow">↗</span>
+          </a>
+          <a class="social-card whatsapp" href="https://wa.me/995YOURNUMBER" target="_blank" rel="noopener noreferrer">
+            <span class="social-symbol">◔</span>
+            <span><strong>WhatsApp</strong><small>მოგვწერე WhatsApp-ზე</small></span>
+            <span class="social-arrow">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">SWIMMER EXPERIENCE</p>
+          <h2>მზად ხარ ახალი<br>მიზნებისთვის?</h2>
+          <p>აღმოაჩინე კომფორტული და ფუნქციური აღჭურვილობა, რომელიც ყოველდღიურ ვარჯიშს კიდევ უფრო სასიამოვნოს გახდის.</p>
+          <a href="#catalog" class="outline-btn">კატალოგის ნახვა</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="container footer-grid">
+      <div><strong class="footer-logo">Swim Space</strong><p>ცურვის მოყვარულებისთვის შექმნილი თანამედროვე კატალოგი.</p></div>
+      <div><b>ნავიგაცია</b><a href="#home">მთავარი</a><a href="#catalog">კატალოგი</a></div>
+      <div><b>დახმარება</b><a href="#contact">კონტაქტი</a><a href="#about">ჩვენ შესახებ</a></div>
+      <div><b>დაგვიკავშირდი</b><p>Swimspacee@Gmail.com</p><p>+995 544 113 613</p></div>
+    </div>
+    <div class="container copyright">© 2026 Swim Space. ყველა უფლება დაცულია.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
